@@ -53,3 +53,12 @@ exports.signup = function(req, res, next) {
     });
   });
 }
+exports.currentUser = function(req, res) {
+  const user = {
+    email: req.user.email,
+    token: tokenForUser(req.user),
+    watchList: req.user.watchList
+  }
+
+  res.send(user)
+}

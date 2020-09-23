@@ -14,6 +14,7 @@ const Nav = ({ authenticated, email, signout }) => {
       return (
         <React.Fragment>
           <li>{email}</li>
+          {/* <li>{}</li> */}
           <li><a href="#" onClick={handleSignOutClick}>Sign Out</a></li>
         </React.Fragment>
       );

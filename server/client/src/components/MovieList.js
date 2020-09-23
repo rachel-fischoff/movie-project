@@ -19,6 +19,7 @@ class MovieList extends Component {
 
   componentDidMount () {
     this.props.fetchMovies()
+    console.log(this.props)
   }
 
   loadItems (page) {

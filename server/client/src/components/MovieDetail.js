@@ -6,6 +6,7 @@ import * as actions from '../actions';
 import { connect } from "react-redux";
 
 class MovieDetail extends Component {
+
   render() {
     const POSTER_PATH = "http://image.tmdb.org/t/p/w185";
     const BACKDROP_PATH = "http://image.tmdb.org/t/p/w1280";
@@ -33,6 +34,7 @@ class MovieDetail extends Component {
                 {movie.vote_average}
                 /10
               </p>
+              <button > Add Movie to Watch List </button>
             </div>
 
           </div>

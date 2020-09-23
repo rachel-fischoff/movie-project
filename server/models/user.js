@@ -7,7 +7,8 @@ var jwt = require('jsonwebtoken');
 const UserSchema = new Schema({
   email: { type: String, unique: true, lowercase: true },
   hash: String,
-  salt: String
+  salt: String,
+  watchList: [{ type: Movie.MovieSchema }]
 })
 
 UserSchema.methods.setPassword = function(password){
